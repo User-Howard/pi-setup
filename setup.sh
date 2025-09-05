@@ -20,7 +20,8 @@ sudo systemctl enable --now tailscaled
 sudo apt install -y podman podman-compose
 
 PUB_KEYS=(
-"SHA256:KFjZao0NTyJokBztXwL6COA0FBlwxssZDgFBKhR4Vmw howard@pi"
+"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINcOewWEnZFe9iNhKoYXweSzhl+wFU2GnWLvlr34pdGI howard@pi"
+"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAREs9VDpSRklrIKKuKERzuLfQCP/CiWswbni/ufZ7bm"
 )
 
 mkdir -p ~/.ssh
