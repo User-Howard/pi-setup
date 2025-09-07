@@ -19,9 +19,10 @@ sudo systemctl enable --now tailscaled
 # Install Podman and Podman Compose
 sudo apt install -y podman podman-compose
 
-sudo add-apt-repository ppa:neovim-ppa/unstable -y
-sudo apt update
-sudo apt install -y neovim
+
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+sudo mv nvim.appimage /usr/local/bin/nvim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 
 PUB_KEYS=(
