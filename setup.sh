@@ -19,6 +19,10 @@ sudo systemctl enable --now tailscaled
 # Install Podman and Podman Compose
 sudo apt install -y podman podman-compose
 
+sudo apt install -y neovim
+mv ~/.config/nvim{,.bak}
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+
 PUB_KEYS=(
 "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINcOewWEnZFe9iNhKoYXweSzhl+wFU2GnWLvlr34pdGI howard@pi"
 "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAREs9VDpSRklrIKKuKERzuLfQCP/CiWswbni/ufZ7bm"
