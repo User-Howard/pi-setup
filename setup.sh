@@ -20,7 +20,6 @@ sudo systemctl enable --now tailscaled
 sudo apt install -y podman podman-compose
 
 sudo apt install -y neovim
-mv ~/.config/nvim{,.bak}
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 
 PUB_KEYS=(
