@@ -20,10 +20,11 @@ sudo systemctl enable --now tailscaled
 sudo apt install -y podman podman-compose
 
 
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage
-sudo mv nvim.appimage /usr/local/bin/nvim
-git clone https://github.com/LazyVim/starter ~/.config/nvim
+cd /tmp
+wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux-arm64.tar.gz
+tar xzf nvim-linux-arm64.tar.gz
+sudo mv nvim-linux-arm64 /opt/neovim
+sudo ln -sf /opt/neovim/bin/nvim /usr/local/bin/nvim
 
 PUB_KEYS=(
 "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINcOewWEnZFe9iNhKoYXweSzhl+wFU2GnWLvlr34pdGI howard@pi"
