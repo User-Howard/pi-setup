@@ -39,3 +39,7 @@ for key in "${PUB_KEYS[@]}"; do
 done
 
 chmod 600 ~/.ssh/authorized_keys
+
+
+# Fix Ghostty Terminal Error
+echo 'export TERM=xterm-256color' >> ~/.bashrc
