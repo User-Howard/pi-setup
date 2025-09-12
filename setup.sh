@@ -26,6 +26,8 @@ tar xzf nvim-linux-arm64.tar.gz
 sudo mv nvim-linux-arm64 /opt/neovim
 sudo ln -sf /opt/neovim/bin/nvim /usr/local/bin/nvim
 
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+
 PUB_KEYS=(
 "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINcOewWEnZFe9iNhKoYXweSzhl+wFU2GnWLvlr34pdGI howard@pi"
 "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAREs9VDpSRklrIKKuKERzuLfQCP/CiWswbni/ufZ7bm"
