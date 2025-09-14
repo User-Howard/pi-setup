@@ -19,7 +19,7 @@ sudo systemctl enable --now tailscaled
 # Install Podman and Podman Compose
 sudo apt install -y podman podman-compose
 
-
+# install lazyvim
 cd /tmp
 wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux-arm64.tar.gz
 tar xzf nvim-linux-arm64.tar.gz
@@ -27,6 +27,9 @@ sudo mv nvim-linux-arm64 /opt/neovim
 sudo ln -sf /opt/neovim/bin/nvim /usr/local/bin/nvim
 
 git clone https://github.com/LazyVim/starter ~/.config/nvim
+
+# install coder
+curl -fsSL https://coder.com/install.sh | sh
 
 PUB_KEYS=(
 "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINcOewWEnZFe9iNhKoYXweSzhl+wFU2GnWLvlr34pdGI howard@pi"
