@@ -5,8 +5,8 @@ set -e  # Exit immediately if a command fails
 sudo apt update
 sudo apt upgrade -y
 
-# Install Git
-sudo apt install -y git
+# Install Git, Tmux
+sudo apt install -y git tmux
 
 # Install Snapd
 sudo apt install -y snapd
